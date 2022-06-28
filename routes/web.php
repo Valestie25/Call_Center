@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//Pruebas de rutas
+Route::get('/profile', function () {
+    return view('Layouts.perfil');
+});
+
+Route::get('/ver/{id}/{email}', function ($id, $email) {
+    return 'Estas viendo el perfil numero '.$id.' Con el email '.$email;
+});
