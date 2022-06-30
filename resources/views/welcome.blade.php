@@ -9,8 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class = "container mx-auto px-4  bg-red-500">
-s
-    </div>
+   <div class = "grid grid-cols-4">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</div>
 </body>
 </html>
