@@ -9,13 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>sss1</h1>
-        <h2>sss2</h2>
-        <h3>sssssss3</h3>
-        <h4>sss4</h4>
-        <h5>sss5</h5>
-        <h6>sss  6</h6>
+    <div class = "container mx-auto px-4  bg-red-500">
+s
     </div>
 </body>
 </html>
