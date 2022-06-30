@@ -9,11 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-   <div class = "grid grid-cols-4">
-    <div>A</div>
-    <div>B</div>
-    <div>C</div>
-    <div>D</div>
+    <template>
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <slot/>
+  </button>
+</template>
 </div>
 </body>
 </html>
