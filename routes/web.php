@@ -14,11 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.template.plantilla');
 });
 //Pruebas de rutas
-Route::get('/profile', function () {
-    return view('Layouts.perfil');
+Route::get('/departamentoA', function () {
+    return view('layouts.departamentoA');
+});
+
+Route::get('/departamentoB', function () {
+    return view('layouts.departamentoB');
+});
+
+Route::get('/departamentoC', function () {
+    return view('layouts.departamentoC');
+});
+
+Route::get('/departamentoD', function () {
+    return view('layouts.departamentoD');
 });
 
 Route::get('/ver/{id}/{email}', function ($id, $email) {
