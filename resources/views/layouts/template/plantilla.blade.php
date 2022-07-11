@@ -16,6 +16,7 @@
     <title>@yield('title', 'Documento')</title>
 </head>
 <body>
+<div class=" bg-withLight-400 fixed h-full w-full">
     <!--HEADER-->
     <div class="w-full border-b-3 border-withLight-400">
         <div class="relative flex flex-wrap items-center justify-between px-2 py-2 bg-withLight-100">
@@ -26,8 +27,9 @@
             </div>
         </div>
     </div>
-<!-- SIDEBAR NAVIGATION -->
-    <div class="flex flex-wra">
+    <!-- SIDEBAR NAVIGATION -->
+    <div class="bg-withLight-200 w-full h-full">
+    <div class="flex flex-wra ">
         <div class="fixed h-full bg-withLight-100 border-r-3 border-withLight-400">
             <nav class="flex flex-col justify-center items-center text-left">
                 <ul class="w-full">
@@ -56,10 +58,11 @@
             </nav>
         </div>
     </div> 
-    <div class="ml-56 mt-2">
-        <div class="  h-full w-10/12">
+    <div class=" ml-56 mt-2 mr-8">
         @yield('content')
-        </div>
     </div>
+    </div>
+
+</div>
 </body>
 </html>
