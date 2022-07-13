@@ -6,7 +6,7 @@
     <div class="text-lg font-bold uppercase text-black-700">Despartamento A<div>
     <div>
         <div>
-        <figure class="highcharts-figure grid gap-4 grid-cols-2 ">
+        <figure class="highcharts-figure grid gap-4 grid-cols-2">
             <div id="container" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
             <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
             <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>

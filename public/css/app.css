@@ -698,3 +698,13 @@ video {
   --tw-shadow-color: rgb(89 89 89 / 0.1);
   --tw-shadow: var(--tw-shadow-colored);
 }
+@media (min-width: 768px) {
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+}
