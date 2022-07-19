@@ -4,72 +4,121 @@
 
 @section('content')
 <div>Departamento A</div>
-        <figure class=" highcharts-figure grid gap-2 grid-cols-2 w-full"> 
-            <div id="container" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
+    <div class="container items-center w-full">
+        <div class="flex m-2">
+            <button class="text-base  rounded-r-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
+            hover:bg-gray-200  
+            bg-gray-100 
+            text-gray-700 
+            border duration-200 ease-in-out 
+            border-gray-600 transition">
+                <div class="flex leading-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-5 h-5">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Back</div>
+            </button>
+            <button class="text-base  rounded-l-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
+            hover:bg-gray-200  
+            bg-gray-100 
+            text-gray-700 
+            border duration-200 ease-in-out 
+            border-gray-600 transition">
+                <div class="flex leading-5">Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 ml-1">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+        <figure class=" highcharts-figure w-full"> 
+            <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
+        </figure>
+        <div class="pt-2 grid gap-2 grid-cols-2 w-full">
             <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
             <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
             <div class=" border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-        </figure>
-    </div>
+        </div>
+    </div>      
+    <div>
         <script>
-            Highcharts.chart('container', {
+            Highcharts.chart('container1', {
                 chart: {
-                    plotBackgroundColor: null,
-                    plotBorderWidth: null,
-                    plotShadow: false,
-                    type: 'pie'
+                    type: 'spline'
                 },
                 title: {
-                    text: 'Promedio de llamadas por regiones'
+                    text: 'Monthly Average Temperature'
                 },
-                tooltip: {
-                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
                 },
-                accessibility: {
-                    point: {
-                        valueSuffix: '%'
+                xAxis: {
+                    categories: ['00:00 - 01:00', 
+                                '02:00 - 03:00', 
+                                '04:00 - 05:00', 
+                                '06:00 - 07:00', 
+                                '08:00 - 09:00', 
+                                '10:00 - 11:00',
+                                '12:00 - 13:00', 
+                                '14:00 - 15:00', 
+                                '16:00 - 17:00', 
+                                '18:00 - 19:00', 
+                                '20:00 - 21:00', 
+                                '22:00 - 23:00'],
+                    accessibility: {
+                        description: 'Months of the year'
                     }
                 },
+                yAxis: {
+                    title: {
+                        text: 'Calls'
+                    }
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true
+                },
                 plotOptions: {
-                    pie: {
-                        allowPointSelect: true,
-                        cursor: 'pointer',
-                        dataLabels: {
-                            enabled: true,
-                            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
                         }
                     }
                 },
-                credits: {
-                    enabled: false
-                },
                 series: [{
-                    name: 'Promedio',
-                    colorByPoint: true,
+                    name: 'Departamento A',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: [200, 300, 553, 580, 300, 295, 250, 658, 789, 1952, 2056]
+
+                }, {
+                    name: 'Departamento B',
+                    marker: {
+                        symbol: 'square'
+                    },
                     data: [{
-                        name: 'Tijuana',
-                        y: 61.41,
-                        sliced: true,
-                        selected: true
-                    }, {
-                        name: 'Mexicali',
-                        y: 11.84
-                    }, {
-                        name: 'Ensenada',
-                        y: 10.85
-                    }, {
-                        name: 'Tecate',
-                        y: 4.67
-                    }, {
-                        name: 'Playas de rosarito',
-                        y: 5.38
-                    }, {
-                        name: 'San Quintín',
-                        y: 4.25
-                    }, {
-                        name: 'San Felipe',
-                        y: 1.6
-                    }]
+                        y: 3.9,
+                    }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'Departamento C',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: [{
+                        y: 3.9,
+                    }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'Departamento D',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: [{
+                        y: 3.9,
+                    }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
                 }]
             });
         </script>
@@ -81,22 +130,22 @@
                     type: 'column'
                 },
                 title: {
-                    text: 'Total de llamadas mensuales'
+                    text: 'Promedio de llamadas registradas por hora'
                 },
                 xAxis: {
                     categories: [
-                        'Jan',
-                        'Feb',
-                        'Mar',
-                        'Apr',
-                        'May',
-                        'Jun',
-                        'Jul',
-                        'Aug',
-                        'Sep',
-                        'Oct',
-                        'Nov',
-                        'Dec'
+                        '00:00',
+                        '01:00',
+                        '02:00',
+                        '03:00',
+                        '04:00',
+                        '05:00',
+                        '06:00',
+                        '07:00',
+                        '08:00',
+                        '09:00',
+                        '10:00',
+                        '11:00',
                     ],
                     crosshair: true
                 },

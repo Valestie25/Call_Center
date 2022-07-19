@@ -16,7 +16,7 @@
     <title>@yield('title', 'Documento')</title>
 </head>
 <body class="bg-withLight-400 w-full h-full">
-    <div class="relative">
+    <nav class="relative">
         <!--HEADER-->
         <div class="float-left fixed ml-48 w-full">
             <div class="border-b-3 border-withLight-400">
@@ -46,9 +46,9 @@
                 </a>
             </div>
         </div>
-        <div class="text-lg font-bold uppercase text-black-700 w-full h-full pl-52 pt-16 pr-4">
+    </nav>
+        <div class="py-8 text-lg font-bold uppercase text-black-700 w-full h-full pl-52 pt-16 pr-6">
             @yield('content')
         </div>
-    </div>
 </body>
 </html>
