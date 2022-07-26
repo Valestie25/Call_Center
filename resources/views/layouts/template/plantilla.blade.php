@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="{{ asset('css/highcharts.css')}}">
     <title>@yield('title', 'Documento')</title>
 </head>
-<body class="bg-withLight-400 w-full h-full">
+<body class="bg-gray-200 w-full h-full">
     <nav class="relative">
         <!--HEADER-->
         <div class="float-left fixed ml-48 w-full">
-            <div class="border-b-3 border-withLight-400">
+            <div class="border-b-3 border-gray-500">
                 <div class="relative flex flex-wrap items-center justify-between px-2 py-2 bg-withLight-100">
                     <div class="mx-5 flex flex-wrap items-center justify-between">
                         <a class="text-lg font-bold mr-4 py-2 uppercase text-black-700" href="/">
@@ -31,7 +31,7 @@
         </div>
         <!-- SIDEBAR NAVIGATION -->
         <div class="fixed h-full">
-            <div class=" flex h-full bg-withLight-100 border-r-3 border-withLight-400 flex-col">
+            <div class=" flex h-full bg-withLight-100 border-r-3 border-gray-500 flex-col">
                 <a class="text-black-700 hover:bg-withLight-400 hover:shadow-lg  hover:shadow-black-500/10 py-5 px-5 transition duration-300 ease-in-out" href="departamentoA">Departamento A
                     <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
                 </a>
