@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DepartamentoAController;
+use App\Http\Controllers\DepartamentoBController;
+use App\Http\Controllers\DepartamentoCController;
+use App\Http\Controllers\DepartamentoDController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,26 +21,17 @@ Route::get('/', function () {
     return view('layouts.template.plantilla');
 });
 //Pruebas de rutas
-Route::get('/departamentoA', function () {
-    return view('layouts.departamentoA');
-});
+Route::get('/departamentoA', DepartamentoAController::class);
 
 Route::get('/departamentoA/seccion1', function () {
     return view('layouts.vistadepartamentoA');
 });
 
+Route::get('/departamentoB', DepartamentoBController::class);
 
-Route::get('/departamentoB', function () {
-    return view('layouts.departamentoB');
-});
+Route::get('/departamentoC', DepartamentoCController::class);
 
-Route::get('/departamentoC', function () {
-    return view('layouts.departamentoC');
-});
-
-Route::get('/departamentoD', function () {
-    return view('layouts.departamentoD');
-});
+Route::get('/departamentoD', DepartamentoDController::class);
 
 Route::get('/ver/{id}/{email}', function ($id, $email) {
     return 'Estas viendo el perfil numero '.$id.' Con el email '.$email;
