@@ -3,13 +3,14 @@
 @section('title','Departamento A')
 
 @section('content')
+
 <div>Departamento A</div>
     <div class="container items-center w-full">
-        <div class="flex m-2">
+        <a class="flex m-2" href="seccion1">
             <button class="text-base  rounded-r-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
             hover:bg-gray-200  
             bg-gray-100 
-            text-gray-700 
+            text-black-500 
             border duration-200 ease-in-out 
             border-gray-600 transition">
                 <div class="flex leading-5">
@@ -21,7 +22,7 @@
             <button class="text-base  rounded-l-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
             hover:bg-gray-200  
             bg-gray-100 
-            text-gray-700 
+            text-black-500 
             border duration-200 ease-in-out 
             border-gray-600 transition">
                 <div class="flex leading-5">Next
@@ -30,15 +31,14 @@
                     </svg>
                 </div>
             </button>
-        </div>
+        </a>
     </div>
-        <figure class=" highcharts-figure w-full"> 
+        <figure class="highcharts-figure w-full"> 
             <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
         </figure>
         <div class="pt-2 grid gap-2 grid-cols-2 w-full">
             <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
             <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-            <div class=" border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
         </div>
     </div>      
     <div>
@@ -247,4 +247,6 @@
         
         </script>
     </div>
+    </div>
+    
 @endsection

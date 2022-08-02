@@ -21,10 +21,9 @@ Route::get('/departamentoA', function () {
     return view('layouts.departamentoA');
 });
 
-Route::get('/departamentoA/seccion1', function () {
+Route::get('/seccion1', function () {
     return view('layouts.vistadepartamentoA');
 });
-
 
 Route::get('/departamentoB', function () {
     return view('layouts.departamentoB');

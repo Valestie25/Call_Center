@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ asset('css/highcharts.css')}}">
     <title>@yield('title', 'Documento')</title>
 </head>
-<body class="bg-gray-200 w-full h-full">
+<body class="bg-gray-100  w-full h-full">
     <nav class="relative">
         <!--HEADER-->
         <div class="float-left fixed ml-48 w-full">
@@ -47,8 +47,8 @@
             </div>
         </div>
     </nav>
-        <div class="py-8 text-lg font-bold uppercase text-black-700 w-full h-full pl-52 pt-16 pr-6">
-            @yield('content')
-        </div>
+    <div class="py-8 text-lg font-bold uppercase text-black-700 w-full h-full pl-52 pt-16 pr-6">
+        @yield('content')
+    </div>
 </body>
 </html>
