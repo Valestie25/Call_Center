@@ -5,15 +5,9 @@
 @section('content')
 
 <div>Departamento A</div>
-<<<<<<< HEAD
-    <div class="container items-center w-full">
-        <a class="flex m-2" href="seccion1">
-            <button class="text-base  rounded-r-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
-=======
 <div class="container items-center w-full">
     <div class="flex m-2">
         <button class="text-base  rounded-r-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
->>>>>>> ba61c86f76f882b9ffce1d12c9931f1976e37a4b
             hover:bg-gray-200  
             bg-gray-100 
             text-black-500 
@@ -32,30 +26,6 @@
             text-black-500 
             border duration-200 ease-in-out 
             border-gray-600 transition">
-<<<<<<< HEAD
-                <div class="flex leading-5">Next
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 ml-1">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </div>
-            </button>
-        </a>
-    </div>
-        <figure class="highcharts-figure w-full"> 
-            <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-        </figure>
-        <div class="pt-2 grid gap-2 grid-cols-2 w-full">
-            <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-            <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-        </div>
-    </div>      
-    <div>
-        <script>
-            Highcharts.chart('container1', {
-                chart: {
-                    type: 'spline'
-                },
-=======
             <div class="flex leading-5">Next
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 ml-1">
                     <polyline points="9 18 15 12 9 6"></polyline>
@@ -104,7 +74,6 @@
                 }
             },
             yAxis: {
->>>>>>> ba61c86f76f882b9ffce1d12c9931f1976e37a4b
                 title: {
                     text: 'Calls'
                 }
@@ -221,31 +190,6 @@
                     dataLabels: {
                         enabled: true
                     }
-<<<<<<< HEAD
-                },
-                credits: {
-                    enabled: false
-                },
-                series: [{
-                    name: 'Tiempo departamento A',
-                    data: [8.6, 48, 4.2, 2.6, 33, 4.6]
-                }, {
-                    name: 'Tiempo departamento B',
-                    data: [4.2, 8.6, 4.6, 33, 2.6, 48]
-                }, {
-                    name: 'Tiempo departamento C',
-                    data: [2.6, 48, 8.6, 4.2,  4.6, 33]
-                }, {
-                    name: 'Tiempo departamento D',
-                    data: [48, 4.6, 2.6, 8.6, 33, 4.2]
-                }]
-            });
-        
-        </script>
-    </div>
-    </div>
-    
-=======
                 }
             },
             credits: {
@@ -258,5 +202,4 @@
         });
     </script>
 </div>
->>>>>>> ba61c86f76f882b9ffce1d12c9931f1976e37a4b
 @endsection
