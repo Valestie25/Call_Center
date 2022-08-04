@@ -10,8 +10,8 @@
       class="w-full h-full"
       xmlns="http://www.w3.org/2000/svg">
     
-      <circle id="employee1" cx="150" cy="100" r="30" fill="blue" />
-      <circle id="employee2" cx="350" cy="100" r="30" fill="blue" />
+      <circle class="hover:bg-withLight-400 hover:shadow-lg hover:scale-110 focus:outline-none" id="employee1" cx="150" cy="100" r="30"/>
+      <circle id="employee2" cx="350" cy="100" r="30" fill="red" />
       <circle id="employee3" cx="550" cy="100" r="30" fill="blue" />
       <circle id="employee4" cx="750" cy="100" r="30" fill="blue" />
       
