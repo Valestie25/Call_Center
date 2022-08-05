@@ -40,7 +40,6 @@
 <div class="pt-2 grid gap-2 grid-cols-2 w-full">
     <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
     <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-    <div class=" border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
 </div>
 </div>
 <div>
