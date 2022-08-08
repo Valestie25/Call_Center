@@ -41,7 +41,7 @@
         </div>
     </div>
     <!-- SIDEBAR NAVIGATION -->
-    <div class="fixed h-full p-3">
+    <div class="fixed h-full">
         <div class=" flex h-full flex-col">
             <a class="btntext-black-700 hover:bg-withLight-100 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 " href="departamentoA">Departamento A
                 <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
