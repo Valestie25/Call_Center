@@ -1,10 +1,10 @@
 @extends('layouts.template.plantilla')
 
-@section('title','Departamento A')
+@section('title','Dashboard de departamentos')
 
 @section('content')
 
-<div>Departamento A</div>
+<div>Datos de los departamentod</div>
 <div class="container items-center w-full">
     <a class="flex m-2" href="seccion1">
         <button class="text-base  rounded-r-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
@@ -13,14 +13,14 @@
         text-black-500 
         border duration-200 ease-in-out 
         border-gray-600 transition">
-            <div class="flex leading-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-5 h-5">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-                Back
-            </div>
-        </button>
-        <button class="text-base  rounded-l-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
+        <div class="flex leading-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-5 h-5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Back
+        </div>
+    </button>
+    <button class="text-base  rounded-l-none  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
         hover:bg-gray-200  
         bg-gray-100 
         text-black-500 
@@ -49,23 +49,24 @@
                 type: 'spline'
             },
             title: {
-                text: 'Tiempo promedio de espera en llamadas por hora'
+                text: 'Monthly Average Temperature'
             },
             subtitle: {
                 text: 'Source: WorldClimate.com'
             },
             xAxis: {
-                categories: [
+                categories: ['00:00 - 01:00',
+                    '02:00 - 03:00',
+                    '04:00 - 05:00',
+                    '06:00 - 07:00',
                     '08:00 - 09:00',
-                    '09:00 - 10:00',
                     '10:00 - 11:00',
-                    '11:00 - 12:00',
                     '12:00 - 13:00',
-                    '13:00 - 14:00',
                     '14:00 - 15:00',
-                    '15:00 - 16:00',
                     '16:00 - 17:00',
-                    '17:00 - 18:00',
+                    '18:00 - 19:00',
+                    '20:00 - 21:00',
+                    '22:00 - 23:00'
                 ],
                 accessibility: {
                     description: 'Months of the year'
@@ -94,7 +95,7 @@
                 marker: {
                     symbol: 'square'
                 },
-                data: <?= $dataWaiting ?>
+                data: [200, 300, 553, 580, 300, 295, 250, 658, 789, 1952, 2056]
 
             }]
         });
@@ -137,7 +138,7 @@
                     borderWidth: 0,
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}'
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
@@ -148,9 +149,9 @@
             },
 
             series: [{
-                name: "Departamento A",
+                name: "CALLS",
                 colorByPoint: true,
-                data: <?= $dataCallsQuantity ?> 
+                //data: $dataCallsInformation
             }],
         });
     </script>
@@ -165,7 +166,7 @@
                 text: 'Duracion promedio de llamadas por hora'
             },
             xAxis: {
-                categories: ['08:00:00', '09:00:00', '10:00:00', '11:00:00', '12:00:00', '13:00:00', '14:00:00', '15:00:00', '16:00:00', '17:00:00', ],
+                categories: ['> 300 sec', '60 - 300', '30 - 60 sec', '15 - 30 sec', '5 - 15 sec', '0 - 5 sec'],
                 title: {
                     text: null
                 }
@@ -195,7 +196,7 @@
             },
             series: [{
                 name: 'Tiempo departamento A',
-                data: <?= $dataCallsDuration ?>
+                //data: $dataCalls
             }]
         });
     </script>
