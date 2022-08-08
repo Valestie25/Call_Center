@@ -20,17 +20,19 @@ use App\Http\Controllers\DepartamentoDController;
 Route::get('/', function () {
     return view('layouts.template.plantilla');
 });
+
+Route::get('/', function(){
+    return view('layouts.dashboardPrincipal');
+});
 //Pruebas de rutas
 Route::get('/departamentoA', DepartamentoAController::class);
-
-Route::get('/seccion1', function () {
-    return view('layouts.vistadepartamentoA');
-});
 
 Route::get('/departamentoB',  DepartamentoBController::class);
 
 Route::get('/departamentoD', DepartamentoDController::class);
 
-Route::get('/ver/{id}/{email}', function ($id, $email) {
-    return 'Estas viendo el perfil numero '.$id.' Con el email '.$email;
+Route::get('/departamentoC', DepartamentoCController::class);
+
+Route::get('/seccion1', function () {
+    return view('layouts.vistadepartamentoA');
 });
