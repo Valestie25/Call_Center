@@ -5,7 +5,6 @@
 @section('content')
 
 <div>Departamento A</div>
-<<<<<<< HEAD
 <div class="text-center w-full">
     <div class="inline-flex m-2">
         <a class="flex " href="seccion1">
