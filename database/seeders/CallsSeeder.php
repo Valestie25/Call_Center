@@ -2,8 +2,15 @@
 
 namespace Database\Seeders;
 
+use App\Models\call;
+use App\Models\DepartmentBCall;
+use App\Models\DepartmentCCall;
+use App\Models\DepartmentDCall;
+use App\Models\Employee;
 use Illuminate\Database\Seeder;
-use App\models\call;
+
+
+use Database\Seeders\Str;
 
 class CallsSeeder extends Seeder
 {
@@ -14,19 +21,12 @@ class CallsSeeder extends Seeder
      */
     public function run()
     {
-        $dataCalls = [
-            array('FECHA_DE_LLAMADAS' =>'2022/07/01', 'DURACION_DE_LLAMADAS' => 1),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/02', 'DURACION_DE_LLAMADAS' => 2),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/03', 'DURACION_DE_LLAMADAS' => 3),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/04', 'DURACION_DE_LLAMADAS' => 4),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/05', 'DURACION_DE_LLAMADAS' =>5),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/06', 'DURACION_DE_LLAMADAS' =>6),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/07', 'DURACION_DE_LLAMADAS' =>7),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/08', 'DURACION_DE_LLAMADAS' =>8),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/09', 'DURACION_DE_LLAMADAS' =>9),
-            array('FECHA_DE_LLAMADAS' =>'2022/07/10','DURACION_DE_LLAMADAS' =>10),
-        ];
+        call::factory(10)->create();
+        DepartmentBCall::factory(100)->create();
+        DepartmentCCall::factory(100)->create();
+        DepartmentDCall::factory(100)->create();
+        Employee::factory(100)->create();
 
-        call::insert($dataCalls);
+
     }
 }

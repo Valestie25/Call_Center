@@ -5,7 +5,6 @@ use App\Http\Controllers\DepartamentoAController;
 use App\Http\Controllers\DepartamentoBController;
 use App\Http\Controllers\DepartamentoCController;
 use App\Http\Controllers\DepartamentoDController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,10 +28,18 @@ Route::get('/departamentoA', DepartamentoAController::class);
 
 Route::get('/departamentoB',  DepartamentoBController::class);
 
+Route::get('/departamentoC', DepartamentoCController::class);
+
 Route::get('/departamentoD', DepartamentoDController::class);
 
+<<<<<<< HEAD
+Route::get('/ver/{id}/{email}', function ($id, $email) {
+    return 'Estas viendo el perfil numero ' . $id . ' Con el email ' . $email;
+});
+=======
 Route::get('/departamentoC', DepartamentoCController::class);
 
 Route::get('/seccion1', function () {
     return view('layouts.vistadepartamentoA');
 });
+>>>>>>> f69343e8858be97f4a1a72e10b05c76c7ced0fdc
