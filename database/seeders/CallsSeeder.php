@@ -21,12 +21,7 @@ class CallsSeeder extends Seeder
      */
     public function run()
     {
-        call::factory(100)->create();
-        DepartmentBCall::factory(100)->create();
-        DepartmentCCall::factory(100)->create();
-        DepartmentDCall::factory(100)->create();
-        //Employee::factory(100)->create();
 
-
+        Employee::factory(100)->create();
     }
 }

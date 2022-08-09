@@ -9,5 +9,5 @@ class DepartmentDCall extends Model
 {
     use HasFactory;
     protected $table = ('CALLS_DEPARTMENT_D');
-    public $timestamps = false;
+    public $timestamps = true;
 }

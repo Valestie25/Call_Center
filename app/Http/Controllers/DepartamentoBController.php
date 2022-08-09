@@ -9,11 +9,17 @@ class DepartamentoBController extends Controller
     public function __invoke(){
 
         $llamadasEspera = DepartmentBCall::select('TIEMPO_PROMEDIO_DE_ESPERA', 'HORA_DE_LLAMADAS')
-        ->inRandomOrder()->take(10)->get();
+        ->orderBy('ID_LLAMADAS', 'ASC')
+        ->take(10)
+        ->get();
         $llamadasCantidad = DepartmentBCall::select('CANTIDAD_PROMEDIO_DE_LLAMADAS', 'HORA_DE_LLAMADAS')
-        ->inRandomOrder()->take(10)->get();
+        ->orderBy('ID_LLAMADAS', 'ASC')
+        ->take(10)
+        ->get();
         $llamadasDuracion = DepartmentBCall::select('HORA_DE_LLAMADAS', 'DURACION_PROMEDIO_DE_LLAMADAS')
-        ->inRandomOrder()->take(10)->get();
+        ->orderBy('ID_LLAMADAS', 'ASC')
+        ->take(10)
+        ->get();
 
         $tiempoDeEsperaPromedio = [];
         foreach ($llamadasEspera as $espera) {
