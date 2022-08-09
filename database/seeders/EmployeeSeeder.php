@@ -15,16 +15,16 @@ class EmployeeSeeder extends Seeder
     public function run()
     {
         $dataEmployee = [
-            array('NOMBRE' =>'Darb', 'APELLIDOS' =>'Gramer'),
-            array('NOMBRE' =>'Tana', 'APELLIDOS' =>'Oluwatoyin'),
-            array('NOMBRE' =>'Beryl', 'APELLIDOS' =>'McGeever'),
-            array('NOMBRE' =>'Latashia', 'APELLIDOS' =>'Elders'),
-            array('NOMBRE' =>'Betsey', 'APELLIDOS' =>'Paskins'),
-            array('NOMBRE' =>'Ravi', 'APELLIDOS' =>'Balsellie'),
-            array('NOMBRE' =>'Giuditta', 'APELLIDOS' =>'Connett'),
-            array('NOMBRE' =>'Linnet', 'APELLIDOS' =>'Size'),
-            array('NOMBRE' =>'Della', 'APELLIDOS' =>'Penk'),
-            array('NOMBRE' =>'Ricardo','APELLIDOS' =>'Pettitt'),
+            array('NOMBRE' =>'Darb', 'APELLIDOS' =>'Gramer', 'DEPARTAMENTO' => 'A'),
+            array('NOMBRE' =>'Tana', 'APELLIDOS' =>'Oluwatoyin', 'DEPARTAMENTO' => 'B'),
+            array('NOMBRE' =>'Beryl', 'APELLIDOS' =>'McGeever', 'DEPARTAMENTO' => 'B'),
+            array('NOMBRE' =>'Latashia', 'APELLIDOS' =>'Elders', 'DEPARTAMENTO' => 'C'),
+            array('NOMBRE' =>'Betsey', 'APELLIDOS' =>'Paskins', 'DEPARTAMENTO' => 'D'),
+            array('NOMBRE' =>'Ravi', 'APELLIDOS' =>'Balsellie', 'DEPARTAMENTO' => 'D'),
+            array('NOMBRE' =>'Giuditta', 'APELLIDOS' =>'Connett', 'DEPARTAMENTO' => 'C'),
+            array('NOMBRE' =>'Linnet', 'APELLIDOS' =>'Size', 'DEPARTAMENTO' => 'B'),
+            array('NOMBRE' =>'Della', 'APELLIDOS' =>'Penk', 'DEPARTAMENTO' => 'B'),
+            array('NOMBRE' =>'Ricardo','APELLIDOS' =>'Pettitt', 'DEPARTAMENTO' => 'A'),
         ];
 
         employee::insert($dataEmployee);

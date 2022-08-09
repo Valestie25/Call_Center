@@ -5,6 +5,8 @@ use App\Http\Controllers\DepartamentoAController;
 use App\Http\Controllers\DepartamentoBController;
 use App\Http\Controllers\DepartamentoCController;
 use App\Http\Controllers\DepartamentoDController;
+use App\Http\Controllers\SearchBarController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,9 +22,7 @@ Route::get('/', function () {
     return view('layouts.template.plantilla');
 });
 
-Route::get('/', function(){
-    return view('layouts.dashboardPrincipal');
-});
+Route::get('/dashboard', SearchBarController::class);
 //Pruebas de rutas
 Route::get('/departamentoA', DepartamentoAController::class);
 

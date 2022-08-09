@@ -8,18 +8,18 @@
 <div class="text-center w-full">
     <div class="inline-flex m-2">
         <a class="flex " href="seccion1">
-            <button id="map" class="bg-white sticky duration-500 border-2 rounded-md border-black-400 hover:border-withLight-200 w-24 transform hover:translate-x-1 h-10 text-2xl hover:bg-black-400 hover:text-withLight-200 text-black-400">
+            <button id="map" class="bg-white sticky duration-500 border-2 rounded-md hover:shadow-xl border-black-400 hover:border-withLight-200 w-24 transform hover:translate-x-1 h-10 text-2xl hover:bg-black-400 hover:text-withLight-200 text-black-400">
                 <i class="fa-solid fa-map"></i>
             </button>
         </a>
     </div>
 </div>
 <figure class=" highcharts-figure w-full">
-    <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
+    <div id="container1" class="border-4 border-sky-500 border-withLight-50 shadow-xl rounded"></div>
 </figure>
 <div class="pt-2 grid gap-2 grid-cols-2 w-full">
-    <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-    <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
+    <div id="container2" class="border-4 border-sky-500 border-withLight-50 shadow-xl rounded"></div>
+    <div id="container3" class="border-4 border-sky-500 border-withLight-50 shadow-xl rounded"></div>
 </div>
 </div>
 <div>
