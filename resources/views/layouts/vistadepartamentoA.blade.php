@@ -3,6 +3,7 @@
 @section('title','Departamento seccios')
 
 @section('content')
+
 <div class="static">Mapa del departamento
   <div class="text-center w-full">
     <div class="inline-flex m-2">
@@ -15,51 +16,75 @@
 </div>
 
 {{-- Inicio de SVG --}}
-<div class = "grid grid-cols-4 gap-y-8">
-  <button class="m-20 cursor-pointer"  id="delete-btn">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
+<div class = "grid grid-cols-4 gap-y-5" >
+  <button class="m-20 cursor-pointer"  id="delete-btn" >
+    <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
   </button>
  <button class="m-20 cursor-pointer"  id="delete-btn">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
+ <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
   </button>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-green-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
+  <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-green-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
 </div>
-<div class="bg-withLight-700 rounded-md w-5/6 h-24 items-center ml-20"></div>
+<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
 <div class = "grid grid-cols-4 gap-y-8">
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-red-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
+<button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-red-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
 </div>
-<div class="bg-withLight-700 rounded-md w-5/6 h-24 items-center ml-20"></div>
+<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
 <div class = "grid grid-cols-4 gap-y-8">
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
-  <div class="m-20 ">
-    <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-  </div>
+<button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
 </div>
-<div class="bg-withLight-700 rounded-md w-5/6 h-24 items-center ml-20"></div>
+<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
 </div>
 
 <div class="absolute inset-0 hidden justify-center items-center" id="overlay">
