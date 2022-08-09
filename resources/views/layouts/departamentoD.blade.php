@@ -25,6 +25,12 @@
     </div>      
     <div>
     <script>
+        function refresh() {
+            setTimeout("document.location=document.location", 60000)
+        }
+    </script>
+    <script>
+        refresh()
         Highcharts.chart('container1', {
             chart: {
                 type: 'spline'
