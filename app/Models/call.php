@@ -10,5 +10,5 @@ class call extends Model
     use HasFactory;
 
     protected $table = ('calls');
-    public $timestamps = false;
+    public $timestamps = true;
 }

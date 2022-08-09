@@ -22,7 +22,7 @@
     <div id="container3" class="border-4 border-sky-500 border-withLight-50 shadow-xl rounded"></div>
 </div>
 </div>
-<div>
+<div id="pointChart" >
     <script>
         Highcharts.chart('container1', {
             chart: {
@@ -180,4 +180,13 @@
         });
     </script>
 </div>
+
+<!-- <script>
+    function reloadItem(){
+        document.getElementById("pointChart").contentWindow.location.reload(true);
+    }
+    
+</script> -->
+
+
 @endsection

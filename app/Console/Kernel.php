@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Jobs\DeleteOldestInsertJob;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 use App\Jobs\GetDataTable;
@@ -18,7 +19,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->job(new GetDataTable)->everyMinute();
-        $schedule -> job (new InsertDataJob)->everyMinute();
+        $schedule->job(new InsertDataJob)->timezone('America/Tijuana')->everyMinute();
+        $schedule->job(new DeleteOldestInsertJob)->timezone('America/Tijuana')->everyMinute();
     }
 
     /**

@@ -13,13 +13,21 @@ class DepartamentoAController extends Controller
     {
 
         $llamadasEspera = call::select('TIEMPO_PROMEDIO_DE_ESPERA', 'HORA_DE_LLAMADAS')
-        ->inRandomOrder()->take(10)->get();
+        ->orderBy('ID_LLAMADAS', 'ASC')
+        ->take(10)
+        ->get();
 
         $llamadasCantidad = call::select('CANTIDAD_PROMEDIO_DE_LLAMADAS', 'HORA_DE_LLAMADAS')
-        ->inRandomOrder()->take(10)->get();
+        ->orderBy('ID_LLAMADAS', 'ASC')
+        ->take(10)
+        ->get();
+        
 
         $llamadasDuracion = call::select('HORA_DE_LLAMADAS', 'DURACION_PROMEDIO_DE_LLAMADAS')
-        ->inRandomOrder()->take(10)->get();
+        ->orderBy('ID_LLAMADAS', 'ASC')
+        ->take(10)
+        ->get();
+        
 
         $tiempoDeEsperaPromedio = [];
         foreach ($llamadasEspera as $espera) {
