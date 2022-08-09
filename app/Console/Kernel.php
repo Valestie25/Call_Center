@@ -20,7 +20,6 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->job(new GetDataTable)->everyMinute();
         $schedule->job(new InsertDataJob)->timezone('America/Tijuana')->everyMinute();
-        $schedule->job(new DeleteOldestInsertJob)->timezone('America/Tijuana')->everyMinute();
     }
 
     /**
