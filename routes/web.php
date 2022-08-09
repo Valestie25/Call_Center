@@ -30,14 +30,8 @@ Route::get('/departamentoB',  DepartamentoBController::class);
 
 Route::get('/departamentoD', DepartamentoDController::class);
 
-<<<<<<< HEAD
-Route::get('/seccion1', function () {
-    return view('layouts.vistadepartamentoA');
-});
-=======
 Route::get('/departamentoC', DepartamentoCController::class);
 
 Route::get('/seccion1', function () {
     return view('layouts.vistadepartamentoA');
 });
->>>>>>> 7eb888348a1745f5e773cc252cdda4b14c1817d7
