@@ -18,9 +18,6 @@
 <div class = "grid grid-cols-4 gap-y-8">
   <button class="m-20 cursor-pointer"  id="delete-btn">
     <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
-    <div id="botonCerrar"  class="bg-blueLight-600"></div>
-    <div id="nombreEmpleado1" class="bg-blueLight-600"></div>
-    <div id="apellidoEmpleado1" class="bg-blueLight-600"></div>
   </button>
   <div class="m-20 ">
     <a class="rounded-full px-14 py-12 bg-blueLight-600"></a>
@@ -101,28 +98,5 @@
       closeBtn.addEventListener('click', toggleModal)
   })
 
-</script>
-
-
-<script>
-  function mostrarInformacion() {
-    var $obtenerNombre = document.getElementById("nombreEmpleado1");
-    var $obtenerApellido = document.getElementById("apellidoEmpleado1");
-    var $cerrar = document.getElementById("botonCerrar");
-
-    $obtenerNombre.innerHTML = "NOMBRE: Marjorie";
-    $obtenerApellido.innerHTML = "APELLIDO: Marjorie";
-    $cerrar.innerHTML = "X";
-  }
-
-  function hideInformation() {
-    //PONER UNA FUNCION QUE OCULTE LA INFORMACION 
-  }
-
-  /* function clickBoton(){
-    setInterval(() => {
-      document.getElementById("boton1");
-    }, 1000);
-  } */
 </script>
 @endsection
