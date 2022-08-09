@@ -3,173 +3,57 @@
 @section('title','Dashboard de departamentos')
 
 @section('content')
-
-<div class="mb-14">Datos de los departamentod</div>
-<figure class=" highcharts-figure w-full">
-    <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-</figure>
-<div class="pt-2 grid gap-2 grid-cols-2 w-full">
-    <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-    <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-</div>
-</div>
-<div>
-    <script>
-        Highcharts.chart('container1', {
-            chart: {
-                type: 'spline'
-            },
-            title: {
-                text: 'Monthly Average Temperature'
-            },
-            subtitle: {
-                text: 'Source: WorldClimate.com'
-            },
-            xAxis: {
-                categories: ['00:00 - 01:00',
-                    '02:00 - 03:00',
-                    '04:00 - 05:00',
-                    '06:00 - 07:00',
-                    '08:00 - 09:00',
-                    '10:00 - 11:00',
-                    '12:00 - 13:00',
-                    '14:00 - 15:00',
-                    '16:00 - 17:00',
-                    '18:00 - 19:00',
-                    '20:00 - 21:00',
-                    '22:00 - 23:00'
-                ],
-                accessibility: {
-                    description: 'Months of the year'
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Calls'
-                }
-            },
-            tooltip: {
-                crosshairs: true,
-                shared: true
-            },
-            plotOptions: {
-                spline: {
-                    marker: {
-                        radius: 4,
-                        lineColor: '#666666',
-                        lineWidth: 1
-                    }
-                }
-            },
-            series: [{
-                name: 'Departamento A',
-                marker: {
-                    symbol: 'square'
-                },
-                data: [200, 300, 553, 580, 300, 295, 250, 658, 789, 1952, 2056]
-
-            }]
-        });
-    </script>
-</div>
-<div>
-    <script>
-        // Create the chart
-        Highcharts.chart('container2', {
-            chart: {
-                type: 'column'
-            },
-            title: {
-                align: 'left',
-                text: 'CANTIDAD DE LLAMADAS POR HORA'
-            },
-            subtitle: {
-                align: 'left',
-                text: ''
-            },
-            accessibility: {
-                announceNewData: {
-                    enabled: true
-                }
-            },
-            xAxis: {
-                type: 'category'
-            },
-            yAxis: {
-                title: {
-                    text: 'llamadas'
-                }
-
-            },
-            legend: {
-                enabled: false
-            },
-            plotOptions: {
-                series: {
-                    borderWidth: 0,
-                    dataLabels: {
-                        enabled: true,
-                        format: '{point.y:.1f}%'
-                    }
-                }
-            },
-
-            tooltip: {
-                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-            },
-
-            series: [{
-                name: "CALLS",
-                colorByPoint: true,
-                //data: $dataCallsInformation
-            }],
-        });
-    </script>
-</div>
-<div>
-    <script>
-        Highcharts.chart('container3', {
-            chart: {
-                type: 'bar'
-            },
-            title: {
-                text: 'Duracion promedio de llamadas por hora'
-            },
-            xAxis: {
-                categories: ['> 300 sec', '60 - 300', '30 - 60 sec', '15 - 30 sec', '5 - 15 sec', '0 - 5 sec'],
-                title: {
-                    text: null
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Population (millions)',
-                    align: 'high'
-                },
-                labels: {
-                    overflow: 'justify'
-                }
-            },
-            tooltip: {
-                valueSuffix: ' % '
-            },
-            plotOptions: {
-                bar: {
-                    dataLabels: {
-                        enabled: true
-                    }
-                }
-            },
-            credits: {
-                enabled: false
-            },
-            series: [{
-                name: 'Tiempo departamento A',
-                //data: $dataCalls
-            }]
-        });
-    </script>
+<!-- BARRA DE BUSQUEDA-->
+<div class="pt-2 relative mx-auto text-gray-600">
+    <div class="form-now">
+        <input name="searchBar" class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+        type="search" name="search" placeholder="Search">
+        <button id="delete-btn" type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+            <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+                width="512px" height="512px">
+                    <path
+                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+            </svg>
+        </button>
+    </div>
+    <div class="absolute inset-0 hidden justify-center items-center" id="overlay">
+        <div class="bg-gray-200 max-w-sm py-2 px-3 rounded shadow-xl text-gray-800">
+            <div class="flex justify-between items-center">
+                <h4 class="text-lg font-bold">Confirm Delete?</h4>
+                <svg class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full" id="close-modal" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="mt-2 text-sm">
+                <p>La busqueda es {{$searchBar}}</p>
+            </div>
+            <div class="mt-3 flex justify-end space-x-3">
+                <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900" id="close-modal">Cancel</button>
+                <button class="px-3 py-1 bg-red-800 text-gray-200 hover:bg-red-600 rounded" id="close-modal">Delete</button>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+        window.addEventListener('DOMContentLoaded', () =>{
+            const overlay = document.querySelector('#overlay')
+            const delBtn = document.querySelector('#delete-btn')
+            const closeBtn = document.querySelector('#close-modal')
+      
+            const toggleModal = () => {
+                overlay.classList.toggle('hidden')
+                overlay.classList.toggle('flex')
+            }
+      
+            delBtn.addEventListener('click', toggleModal)
+      
+            closeBtn.addEventListener('click', toggleModal)
+        })
+      
+      </script>
 </div>
 @endsection
