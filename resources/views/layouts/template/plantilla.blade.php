@@ -11,13 +11,14 @@
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script src="{{ mix('js/app.js')}}"></script>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!--Tailwind CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+    <link href="{{ asset('/public/css/app.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('css/highcharts.css')}}">
     <title>@yield('title', 'Documento')</title>
 </head>
-<body class="bg-blue-50 h-full w-full font-sans">
+<body class="bg-redHard-400 h-full w-full font-sans">
     <!--HEADER-->
     <div class="static w-full">
         <div class=" items-center justify-between px-2 py-2">
@@ -46,7 +47,7 @@
         </div>
     </div>
     <div class="w-full h-full">
-        <div class="bg-withLight-100 ml-52 mt-5 w-5/6 h-5/6 p-6 fixed rounded-2xl overflow-y-scroll">
+        <div class="bg-red-200 ml-52 mt-5 w-5/6 h-5/6 p-6 fixed rounded-2xl overflow-y-scroll">
             <div class="text-lg font-semibold uppercase text-black-700">
                 @yield('content') <!--Mejorar la pagina, animacion rara, colores Y HEADER-->
             </div>
