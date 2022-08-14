@@ -41,7 +41,7 @@
 <div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
 <div class = "grid grid-cols-4 gap-y-8">
 <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-red-600" style="display:flex;">
+  <a class="rounded-full px-12 py-12 bg-redHard-600" style="display:flex;">
     <a id="namecontainer"> Marcos </a>
        </a>
        </button>

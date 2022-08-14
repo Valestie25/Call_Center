@@ -10,11 +10,8 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="{{ mix('js/app.js')}}"></script>
     <!--Tailwind CSS-->
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{ asset('/public/css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('css/highcharts.css')}}">
     <title>@yield('title', 'Documento')</title>
 </head>
@@ -36,22 +33,22 @@
         <!-- Navbar -->
       </header>
     <!-- SIDEBAR NAVIGATION -->
-    <div class="bg-white-900 pr-4 fixed top-0 h-full p-4 shadow">
+    <div class="bg-white-50 pr-4 fixed top-0 h-full p-4 shadow">
         <nav class="static">
             <ul class="flex h-full flex-col">
                 <li>
-                    <a class="nav-link pt-6 block pr-2 text-black hover:text-gray-700 mb-5 focus:text-gray-700 text-lg p-2 transition duration-150 ease-in-out"></a>
+                    <a class="pt-6 block pr-2 mb-5 p-2"></a>
                 </li>
-                <a class="hover:text-black text-black-900 hover:bg-redHard-500 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoA">Departamento A
+                <a class="hove:text-white-100 text-black-900 hover:bg-gray-700 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoA">Departamento A
                     <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
                 </a>
-                <a class="btn text-black-900 hover:bg-white-900 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoB">Departamento B
+                <a class="hove:text-white-100 text-black-900 hover:bg-gray-700 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans"href="departamentoB">Departamento B
                     <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
                 </a>
-                <a class="btn text-black-900 hover:bg-white-900 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoC">Departamento C
+                <a class="hove:text-white-100 text-black-900 hover:bg-gray-700 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans"href="departamentoC">Departamento C
                     <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
                 </a>
-                <a class="btn text-black-900 hover:bg-white-900 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoD">Departamento D
+                <a class="hove:text-white-100 text-black-900 hover:bg-gray-700 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans"href="departamentoD">Departamento D
                     <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
                 </a>
             </ul>

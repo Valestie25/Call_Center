@@ -4,6 +4,8 @@ module.exports = {
     './resources/**/*.blade.php',
     './resources/***/**/*/.blade.php',
     './pages/***/**/*.blade.php',
+    "./resources/**/*.js",
+    "./resources/**/*.vue",
 ],
   // or 'media' or 'class'
   theme: {
