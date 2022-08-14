@@ -3,22 +3,23 @@
 @section('title','Departamento C')
 
 @section('content')
-
-<div>Departamento C</div>
-<div class="text-center w-full">
-    <div class="inline-flex m-2">
-        <a class="flex " href="seccion1">
-            <button id="map" class="bg-white sticky duration-500 border-2 rounded-md border-black-400 hover:border-withLight-200 w-24 transform hover:translate-x-1 h-10 text-2xl hover:bg-black-400 hover:text-withLight-200 text-black-400">
-                <i class="fa-solid fa-map"></i>
-            </button>
-        </a>
+<div class="-mb-4">
+    <div class="mt-4 ml-4 font-mono text-xl font-normal">Departamento C</div>
+    <div class="text-right w-full py-6">
+        <div class="inline-flex">
+            <a class="flex " href="seccion1">
+                <button id="map" class="bg-white-50 sticky duration-500 rounded-md hover:border-withLight-200 transform h-14 text-sm font-normal py-2 px-4 hover:bg-blueOff-400 hover:text-white-200 text-black-900">
+                    Mapa de la zona
+                </button>
+            </a>
+        </div>
     </div>
 </div>
-        <figure class=" highcharts-figure w-full"> 
-            <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
-        </figure>
-        <div class="pt-2 grid gap-2 grid-cols-2 w-full">
-            <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
+<figure class=" highcharts-figure w-full"> 
+    <div id="container1" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded pr-2 "></div>
+</figure>
+<div class="pt-2 grid gap-2 grid-cols-2 w-full">
+    <div id="container2" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded pr-2"></div>
             <div id="container3" class="border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
             <div class=" border-4 border-sky-500 border-withLight-400 shadow-xl rounded"></div>
         </div>

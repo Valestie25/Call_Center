@@ -4,87 +4,77 @@
 
 @section('content')
 
-<div class="static">Mapa del departamento
-  <div class="text-center w-full">
-    <div class="inline-flex m-2">
-        <a class="flex " href="departamentoA">
-          <button id="map" class="bg-white sticky duration-500 border-2 rounded-md border-black-400 hover:border-withLight-200 w-24 transform hover:translate-x-1 h-10 text-2xl hover:bg-black-400 hover:text-withLight-200 text-black-400">
-              <i class="fa-solid fa-chart-column"></i>
-            </button>
-        </a>
-    </div>
+<div class="-mb-4">
+  <div class="mt-4 ml-4 font-mono text-xl font-normal">Departamento B</div>
+  <div class="text-right w-full py-6">
+      <div class="inline-flex">
+          <a class="flex " href="seccion1">
+              <button id="map" class="bg-white-50 sticky duration-500 rounded-md hover:border-withLight-200 transform h-14 text-sm font-normal py-2 px-4 hover:bg-blueOff-400 hover:text-white-200 text-black-900">
+                  Mapa de la zona
+              </button>
+          </a>
+      </div>
+  </div>
 </div>
-
 {{-- Inicio de SVG --}}
-<div class = "grid grid-cols-4 gap-y-5" >
-  <button class="m-20 cursor-pointer"  id="delete-btn" >
-    <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-  </button>
- <button class="m-20 cursor-pointer"  id="delete-btn">
- <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-  </button>
-  <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-green-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-</div>
-<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
-<div class = "grid grid-cols-4 gap-y-8">
-<button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-redHard-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-</div>
-<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
-<div class = "grid grid-cols-4 gap-y-8">
-<button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-       <button class="m-20 cursor-pointer"  id="delete-btn" >
-  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
-    <a id="namecontainer"> Marcos </a>
-       </a>
-       </button>
-</div>
-<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
+<div class="bg-white-50 py-2 rounded-md px-24">
+  <div class = "grid grid-cols-4 gap-4 h-44" >
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+        <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+  </div>
+  <div class="bg-white-700 rounded-md w-full h-20 items-center"></div>
+  <div class = "grid grid-cols-4 gap-4 h-44" >
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+        <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+  </div>
+  <div class="bg-white-700 rounded-md w-full h-20 items-center"></div>
+  <div class = "grid grid-cols-4 gap-4 h-44" >
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+        <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+    <button class="m-20 cursor-pointer"  id="delete-btn" >
+      <i class="text-6xl text-blueLight-600 fa-solid fa-user"></i>
+      <div id="namecontainer"> Marcos </div>
+    </button>
+  </div>
+  <div class="bg-white-700 rounded-md w-full h-20 items-center"></div>
 </div>
 
 <div class="absolute inset-0 hidden justify-center items-center" id="overlay">
@@ -114,7 +104,6 @@
      
   </div>
 </div>
-
 <script>
   window.addEventListener('DOMContentLoaded', () =>{
       const overlay = document.querySelector('#overlay')
