@@ -3,7 +3,8 @@
 @section('title','Departamento seccios')
 
 @section('content')
-<div class="static">Vista dieno
+
+<div class="static">Mapa del departamento
   <div class="text-center w-full">
     <div class="inline-flex m-2">
       <a class="flex " href="departamentoA">
@@ -14,6 +15,7 @@
     </div>
   </div>
 
+<<<<<<< HEAD
   {{-- Inicio de SVG --}}
   <div class="grid grid-cols-4 gap-y-8">
     <button class="m-20 cursor-pointer" id="delete-btn">
@@ -63,10 +65,83 @@
     </div>
   </div>
   <div class="bg-withLight-700 rounded-md w-5/6 h-24 items-center ml-20"></div>
+=======
+{{-- Inicio de SVG --}}
+<div class = "grid grid-cols-4 gap-y-5" >
+  <button class="m-20 cursor-pointer"  id="delete-btn" >
+    <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+  </button>
+ <button class="m-20 cursor-pointer"  id="delete-btn">
+ <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+  </button>
+  <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-green-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+</div>
+<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
+<div class = "grid grid-cols-4 gap-y-8">
+<button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-red-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+</div>
+<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
+<div class = "grid grid-cols-4 gap-y-8">
+<button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+       <button class="m-20 cursor-pointer"  id="delete-btn" >
+  <a class="rounded-full px-12 py-12 bg-blueLight-600" style="display:flex;">
+    <a id="namecontainer"> Marcos </a>
+       </a>
+       </button>
+</div>
+<div class="bg-withLight-700 rounded-md w-5/6 h-20 items-center ml-20"></div>
+>>>>>>> a94ea32d4c556ebbc441fe564e2c02169848df14
 </div>
 
 <div class="absolute inset-0 hidden justify-center items-center" id="overlay">
   <div class="bg-gray-200 max-w-sm py-2 px-3 rounded shadow-xl text-gray-800">
+<<<<<<< HEAD
     <div class="flex justify-between items-center">
       <h4 class="text-lg font-bold">EMPLOYEE INFORMATION</h4>
       <svg class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full" id="close-modal" fill="currentColor" viewBox="0 0 20 20">
@@ -80,6 +155,31 @@
       <button class="px-3 py-1 rounded hover:bg-red-300 hover:bg-opacity-50 hover:text-red-900" id="close-modal">Cancel</button>
       <button class="px-3 py-1 bg-red-800 text-gray-200 hover:bg-red-600 rounded" id="close-modal">Delete</button>
     </div>
+=======
+      <div class="flex justify-between items-center">
+          <h4 class="text-lg font-bold">INFORMACION DEL EMPLEADO</h4>
+          <svg class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full" id="close-modal" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+          </svg>
+      </div>
+      <div class="mt-2 text-sm">
+          <p class="font-bold">Nombre:</p>
+          <p>Shawn</p>
+          <p class="font-bold">Apellido:</p>
+          <p>Mendez</p>
+          <p class="font-bold">Ultima llamada:</p>
+          <p>Hace 5 min</p>
+          <p class="font-bold">Tiempo ultima llamada:</p>
+          <p>Hace 3 min</p>
+          <p class="font-bold">Tiempo en llamada en curso:</p>
+          <p>30 seg</p>
+          <p class="font-bold">Tiempo inactivo:</p>
+          <p>30 min</p>
+      </div>
+     
+>>>>>>> a94ea32d4c556ebbc441fe564e2c02169848df14
   </div>
 </div>
 
@@ -98,28 +198,5 @@
 
     closeBtn.addEventListener('click', toggleModal)
   })
-</script>
-
-
-<script>
-  function mostrarInformacion() {
-    var $obtenerNombre = document.getElementById("nombreEmpleado1");
-    var $obtenerApellido = document.getElementById("apellidoEmpleado1");
-    var $cerrar = document.getElementById("botonCerrar");
-
-    $obtenerNombre.innerHTML = "NOMBRE: Marjorie";
-    $obtenerApellido.innerHTML = "APELLIDO: Marjorie";
-    $cerrar.innerHTML = "X";
-  }
-
-  function hideInformation() {
-    //PONER UNA FUNCION QUE OCULTE LA INFORMACION 
-  }
-
-  /* function clickBoton(){
-    setInterval(() => {
-      document.getElementById("boton1");
-    }, 1000);
-  } */
 </script>
 @endsection
