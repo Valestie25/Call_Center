@@ -5,7 +5,8 @@ use App\Http\Controllers\DepartamentoAController;
 use App\Http\Controllers\DepartamentoBController;
 use App\Http\Controllers\DepartamentoCController;
 use App\Http\Controllers\DepartamentoDController;
-use App\Http\Controllers\SearchBarController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\DepartamentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,9 @@ Route::get('/', function () {
     return view('layouts.template.plantilla');
 });
 
-Route::get('/dashboard', SearchBarController::class);
 //Pruebas de rutas
+Route::get('/vistadepartamentoA', EmployeeController::class);
+
 Route::get('/departamentoA', DepartamentoAController::class);
 
 Route::get('/departamentoB',  DepartamentoBController::class);
@@ -31,6 +33,8 @@ Route::get('/departamentoB',  DepartamentoBController::class);
 Route::get('/departamentoD', DepartamentoDController::class);
 
 Route::get('/departamentoC', DepartamentoCController::class);
+
+Route::get('/', DepartamentController::class);
 
 Route::get('/seccion1', function () {
     return view('layouts.vistadepartamentoA');
