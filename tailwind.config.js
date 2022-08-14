@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */ 
 module.exports = {
-  content: ["./src/**/*.{html,js}",
-        './resources/**/*.blade.php',
-        './resources/***/**/*/.blade.php',
-        './pages/***/**/*.blade.php',
+    content: ["./src/**/*.{html,js}",
+    './resources/**/*.blade.php',
+    './resources/***/**/*/.blade.php',
+    './pages/***/**/*.blade.php',
 ],
   // or 'media' or 'class'
   theme: {
@@ -84,7 +84,7 @@ module.exports = {
             "800": "#182A34",
             "900": "#0D171C"
         },
-        "red": {
+        "redHard": {
             "50": "#FCE9E9",
             "100": "#F8CECE",
             "200": "#F2A1A1",
@@ -156,7 +156,7 @@ module.exports = {
             "800": "#261429",
             "900": "#130A15"
         },
-        "purple": {
+        "purpleHard": {
             "50": "#F4E9F6",
             "100": "#EAD4ED",
             "200": "#D4A9DB",
@@ -180,7 +180,7 @@ module.exports = {
             "800": "#623804",
             "900": "#311C02"
         },
-        "orange": {
+        "orangeHard": {
             "50": "#FFEFDB",
             "100": "#FFE1BD",
             "200": "#FFC175",
@@ -204,7 +204,7 @@ module.exports = {
             "800": "#382A19",
             "900": "#1C150D"
         },
-        "brown": {
+        "brownHard": {
             "50": "#F3EEE7",
             "100": "#E7DCCF",
             "200": "#D1BCA3",
@@ -228,7 +228,7 @@ module.exports = {
             "800": "#0D5911",
             "900": "#062D08"
         },
-        "green": {
+        "greenHard": {
             "50": "#E6FAE7",
             "100": "#CDF4CF",
             "200": "#9BE99E",

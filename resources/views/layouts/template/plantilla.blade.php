@@ -13,44 +13,53 @@
     <script src="{{ mix('js/app.js')}}"></script>
     <!--Tailwind CSS-->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
-    <link href="{{ asset('/public/css/app.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('/public/css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('css/highcharts.css')}}">
     <title>@yield('title', 'Documento')</title>
 </head>
-<body class="bg-redHard-400 h-full w-full font-sans">
+<body class="bg-gray-100  h-full w-full font-sans ">
     <!--HEADER-->
-    <div class="static w-full">
-        <div class=" items-center justify-between px-2 py-2">
-            <div class="mx-5 items-center justify-between grid grid-cols-3 gap-2">
-                <a class="text-lg font-bold mr-4 py-2 uppercase text-black-700 font-sans" href="/dashboard">
-                Call Center Managment
-                </a>
+    <header class="ml-52">
+        <!-- Navbar -->
+        <nav class="shadow py-2 relative flex items-center w-full justify-between h-20">
+          <div class="px-6 w-full flex flex-wrap items-center justify-between">
+            <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
+                <ul class="navbar-nav mr-auto lg:flex lg:flex-row">
+                    <li class="nav-item">
+                      <a class="nav-link block pr-2 text-black text-xl p-2 transition duration-150 ease-in-out" href="dashboard" data-mdb-ripple="true" data-mdb-ripple-color="light">Call Center Management</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+      </header>
     <!-- SIDEBAR NAVIGATION -->
-    <div class="fixed h-full">
-        <div class=" flex h-full flex-col">
-            <a class="btn text-black-700 hover:bg-withLight-100 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoA">Departamento A
-                <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
-            </a>
-            <a class="btn text-black-700 hover:bg-withLight-100 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoB">Departamento B
-                <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
-            </a>
-            <a class="btn text-black-700 hover:bg-withLight-100 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoC">Departamento C
-                <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
-            </a>
-            <a class="btn text-black-700 hover:bg-withLight-100 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoD">Departamento D
-                <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
-            </a>
-        </div>
+    <div class="bg-white-900 pr-4 fixed top-0 h-full p-4 shadow">
+        <nav class="static">
+            <ul class="flex h-full flex-col">
+                <li>
+                    <a class="nav-link pt-6 block pr-2 text-black hover:text-gray-700 mb-5 focus:text-gray-700 text-lg p-2 transition duration-150 ease-in-out"></a>
+                </li>
+                <a class="hover:text-black text-black-900 hover:bg-redHard-500 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoA">Departamento A
+                    <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
+                </a>
+                <a class="btn text-black-900 hover:bg-white-900 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoB">Departamento B
+                    <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
+                </a>
+                <a class="btn text-black-900 hover:bg-white-900 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoC">Departamento C
+                    <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
+                </a>
+                <a class="btn text-black-900 hover:bg-white-900 hover:shadow-lg hover:rounded-r-2xl hover:shadow-black-500/10 py-5 px-5 font-sans" href="departamentoD">Departamento D
+                    <i class="text-gray-400 fa-solid fa-chevron-right ml-5"></i>
+                </a>
+            </ul>
+        </nav>
     </div>
-    <div class="w-full h-full">
-        <div class="bg-red-200 ml-52 mt-5 w-5/6 h-5/6 p-6 fixed rounded-2xl overflow-y-scroll">
-            <div class="text-lg font-semibold uppercase text-black-700">
-                @yield('content') <!--Mejorar la pagina, animacion rara, colores Y HEADER-->
-            </div>
+    <div class="ml-52 p-4 pl-10 ">
+        <div class="text-lg font-semibold uppercase text-black-900">
+            @yield('content') <!--Mejorar la pagina, animacion rara, colores Y HEADER-->
         </div>
     </div>
 </body>

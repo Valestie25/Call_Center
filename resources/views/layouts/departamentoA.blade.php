@@ -186,11 +186,10 @@
         });
     </script>
 </div>
-
-<!-- <script>
-    function reloadItem(){
-        document.getElementById("pointChart").contentWindow.location.reload(true);
-    }
-    
-</script> -->
+    <script>
+        function reloadItem(){
+            document.getElementById("pointChart").contentWindow.location.reload(true);
+        }
+        
+    </script>
 @endsection
