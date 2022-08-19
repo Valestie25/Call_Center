@@ -6,6 +6,8 @@ use App\Http\Controllers\DepartamentoBController;
 use App\Http\Controllers\DepartamentoCController;
 use App\Http\Controllers\DepartamentoDController;
 use App\Http\Controllers\SearchBarController;
+use App\Http\Controllers\DepartamentosController;
+use App\Http\Controllers\EmpleadosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +33,12 @@ Route::get('/departamentoB',  DepartamentoBController::class);
 Route::get('/departamentoD', DepartamentoDController::class);
 
 Route::get('/departamentoC', DepartamentoCController::class);
+
+/*
+Route::get('/departamento/create', [DepartamentosController::class, 'create']);
+*/ 
+
+Route::resource('departamento', DepartamentosController::class);
 
 Route::get('/seccion1', function () {
     return view('layouts.vistadepartamentoA');

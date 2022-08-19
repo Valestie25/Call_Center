@@ -54,7 +54,7 @@
             </ul>
             <hr class="my-2">
             <ul class="flex h-full flex-col">
-                <a class="hove:text-white-100 text-black-900 hover:bg-redHard-200 hover:shadow-lg hover:rounded-2xl hover:shadow-black-500/10 py-5 px-5 font-sans"href="departamentoC">
+                <a class="hove:text-white-100 text-black-900 hover:bg-redHard-200 hover:shadow-lg hover:rounded-2xl hover:shadow-black-500/10 py-5 px-5 font-sans"href="/departamento">
                     <i class="fa-solid fa-building p-2"></i>
                     <i class="text-lg not-italic">Departamentos</i>
                 </a>
